@@ -1,0 +1,114 @@
+@import url("../libs/font-awesome-4.3.0/css/font-awesome.min.css");
+
+.menu {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 100%;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ background: #f7f7f7;
+ z-index:10; 
+ overflow:hidden;
+ box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
+}
+.menu li a{
+ display: block;
+ text-indent: -500em;
+ height: 5em;
+ width: 5em;
+ line-height: 5em;
+ text-align:center;
+ color: #1abb99;
+ position: relative;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+ transition: background 0.1s ease-in-out;
+}
+.menu li a:before {
+ font-family: FontAwesome, 'Roboto', sans-serif;
+ speak: none;
+ text-indent: 0em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ font-size: 1.4em;
+}
+.menu li a.search:before {
+ content: "\f002";
+}
+.menu li a.ratting:before {
+ content: "\f005";
+}
+.menu li a.about_us:before {
+ content: "\f007";
+}
+.menu li a.settings:before {
+ content: "\f013";
+}
+.menu li a.genres:before {
+ content: "\f118";
+}
+.menu li a.home:before {
+ content: "\f015";
+}
+.menu li a:hover,
+.menu li:first-child a {
+ background: #1abc9d;
+ color: #fff;
+}
+@media all and (max-width: 500px) {
+ .menu{
+ height:5em;
+ width:100%;
+ }
+ .menu li{
+ display:inline-block;
+ float:left;
+ }
+}
+@media screen and (max-height: 34em){
+ .menu li {
+ font-size:70%;
+ }
+}
+@media screen and (max-height: 34em) and (max-width: 500px){
+ .menu{
+ height:3.5em;
+ }
+}
+.back-to-top {
+background: none;
+margin: 0;
+position: fixed;
+bottom: 0;
+right: 0;
+width: 70px;
+height: 70px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #1abc9d;
+
+}
+
+.back-to-top i {
+  font-size: 60px;
+}
+::-webkit-scrollbar
+{
+  width: 6px;  /* for vertical scrollbars */
+  height: 6px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background:#ffffff;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: #1abc9d;
+}

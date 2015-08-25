@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>${msg.welcome_title}</title>
+        <h:outputStylesheet library="styles" name="style_index.css"/>
+    </h:head>
+    <h:body>
+        <h1>${msg.welcome}</h1>
+        <div class="main">
+            <form  class="enter_form" name="enter_user" action="resources/pages/main.jsp" method="POST">
+                <div class="form">
+                    <input type="text"  name="username" placeholder="${msg.user_name}" required="true" requiredMessage="${msg.Login_user_name_error}" />
+                    <!--<f:validator validatorId=""></f:validator>   -->
+                           
+                    <input type="password" name="password"  placeholder="${msg.user_password}" value="" required="true"/>
+                    <input type="submit" value="${msg.enter}" />
+                    <a href="http://vk.com/karandriy">${msg.author}</a>
+                </div> 						
+            </form>
+        </div>
+    </h:body>
+</html>
+

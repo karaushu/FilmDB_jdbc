@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,300&subset=latin,cyrillic);
+body{
+background-color: #edeff1;
+}
+.body_container{
+	width: auto;
+	height: auto;
+	background-color: #ffffff;
+	margin-left: 100px;
+	text-align: left; 
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.movies_list li,.movies_list h3,.movies_list p,.movies_list a {
+margin:0;
+}
+
+.list-container {
+
+margin-left:-10px;
+margin-right:2px;
+}
+
+.movies_list {
+margin:0;
+}
+
+.movies_list li {
+display:inline-block;
+float:left;
+list-style:none;
+position:relative;
+margin:10px;
+}
+
+.movies_list li img {
+display:block;
+width:200px;
+height:270px;
+background:#ffffff;
+border:1px solid #1abc9d;
+border-radius:5px;
+-moz-border-radius:5px;
+padding:6px;
+}
+.movies_list li div.film  h3 {
+font-weight:700;
+font-size:16px;
+text-transform:uppercase;
+padding-bottom:5px;
+margin-bottom:10px;
+border-bottom:1px solid #aaa;
+text-shadow:1px 1px 1px #303857;
+}
+.movies_list li div.film {
+display:block;
+background:rgba(255,255,255,0.9);
+color:#1abc9d;
+font-family:'Roboto', Raleway, Arial,sans-serif;
+	line-height: 0.7;
+font-weight:400;
+font-size:12px;
+position:absolute;
+overflow:hidden;
+
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .3s ease-in-out;
+-moz-transition:all .3s ease-in-out;
+-o-transition:all .3s ease-in-out;
+-ms-transition:all .3s ease-in-out;
+transition:all .3s ease-in-out;
+padding:10px;
+}
+
+.movies_list li:hover div.film {
+width:180px;
+height:250px;
+opacity:1;
+filter:alpha(opacity=80);
+}
+.movies_list li div.film {
+top:7px;
+left:7px;
+width:181px;
+height:0;
+}
+.pcv_button{
+display:inline-block;
+padding:5px 13px!important;
+margin:10px 5px!important;
+margin-right:0!important;
+float:left;
+background:#1abc9d;
+color:#ffffff;
+font-family:  'Roboto', Raleway, Arial,sans-serif;
+text-align:center;
+text-decoration:none!important;
+	border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.pcv_button:hover{
+	background:#09cca6;
+}
